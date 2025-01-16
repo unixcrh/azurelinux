@@ -4,6 +4,7 @@
 # Disable automatic bytecode compilation for files in java-utils
 # https://fedoraproject.org/wiki/Packaging:Python_Appendix#Manual_byte_compilation
 %global _python_bytecompile_extra 0
+%{!?__python3: %global __python3 /usr/bin/python3}
 %global python_interpreter %{__python3}
 %global rpmmacrodir %{_rpmconfigdir}/macros.d
 Summary:        Macros and scripts for Java packaging support
