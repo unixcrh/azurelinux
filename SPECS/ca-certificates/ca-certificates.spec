@@ -39,6 +39,8 @@ WORKDIR=$(basename %{1}.d) \
 install -p -m 644 $WORKDIR/%{openssl_format_trust_bundle} %{buildroot}%{_datadir}/pki/ca-trust-source/%{2} \
 touch -r %{SOURCE23} %{buildroot}%{_datadir}/pki/ca-trust-source/%{2}
 
+BuildRequires:  azurelinux-release
+
 Summary:        Certificate Authority certificates
 Name:           ca-certificates
 
