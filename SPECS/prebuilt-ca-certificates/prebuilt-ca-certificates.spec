@@ -1,3 +1,5 @@
+BuildRequires:  azurelinux-release
+
 Summary:        Prebuilt version of ca-certificates package.
 Name:           prebuilt-ca-certificates
 # When updating, "Epoch, "Version", AND "Release" tags must be updated in the "ca-certificates" package as well.
